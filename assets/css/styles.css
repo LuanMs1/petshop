@@ -1,0 +1,419 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* variables */
+:root{
+    /* --primary--collor:#222147; */
+    --primary--collor:#302f51;
+    --secondary--collor:#fffaf5;
+    --text--collor:#57557d;
+}
+/* ----------- */
+/* general */
+
+.paralax{
+    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary--collor);
+    color: var(--secondary--collor);
+    border:none;
+    font-size:15px;
+    font-weight: 600;
+    width: 142px;
+    padding:10px;
+
+}
+body{
+    position: relative;
+    padding-top: 60px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--secondary--collor);
+    gap:60px;
+}
+
+/* ---------------- */
+/* social right tab */
+/* ---------------- */
+.social{
+    position:fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    right: 10px;
+    bottom: 31vh;
+}
+.social img{
+    padding:20px;
+}
+/* ---------------- */
+/* ---------------- */
+/* ---------------- */
+
+/* ---------------- */
+/* -- chat button - */
+/* ---------------- */
+.chat{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 2vw;
+    bottom:5vh;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: var(--primary--collor);
+    fill: white;
+}
+/* ------------ */
+/* ---------------- */
+/* ---------------- */
+header{
+    position: fixed;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: var(--secondary--collor);
+}
+
+/* ------------------------------------------ */
+/* positioning the text inside the logo frame */
+/* ------------------------------------------ */
+
+.logo{
+    position: relative;
+    fill:var(--primary--collor);
+}
+
+.logo h1{
+    position: absolute;
+    top:56px;
+    left: 10px;
+    font-size: 26px;
+    font-weight: normal;
+}
+
+.logo p{
+    position: absolute;
+    bottom:54px;
+    left:35px;
+    color:var(--primary--collor);
+}
+
+/* ------------------------------------------ */
+/* ------------------------------------------ */
+/* ------------------------------------------ */
+
+/* ------------------------------------------ */
+/* ------------- Nav bar -------------------- */
+/* ------------------------------------------ */
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-right:60px;
+    font-size: 13px;
+    width: fit-content;
+    color: var(--text--collor);
+}
+.log-in{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 150px;
+}
+nav a{
+    padding:10px;
+    text-decoration: none;
+}
+
+.symbol{
+    width: 10px;
+    fill: var(--primary--collor);
+}
+
+/* ------------------------------------------ */
+/* ------------------------------------------ */
+/* ------------------------------------------ */
+
+/* ------------------------------------------ */
+/* --------------- HALL --------------------- */
+/* ------------------------------------------ */
+
+.hall{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    width: 85vw;
+    background-image: url(../Dogs/main-dog.png);
+    background-size: cover;
+    background-clip: border-box;
+    padding-left: 100px;
+}
+
+.main-text{
+    font-size:85px;
+    color:var(--secondary--collor);
+    padding-bottom:30px;
+}
+.hall a{
+    text-decoration: none;
+}
+.hall button:hover{
+    transition: all 0.5s;
+    background-color: var(--secondary--collor);
+    color:var(--primary--collor);
+}
+
+/* ------------------------------------------ */
+/* ------------------------------------------ */
+/* ------------------------------------------ */
+
+
+/* ------------------------------------------ */
+/* --------------- PRODUCTS ----------------- */
+/* ------------------------------------------ */
+
+.products{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.products h2{
+    font-size:42px;
+    color:var(--primary--collor);
+    font-weight: normal;
+}
+
+.products-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.product-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:13px;
+    padding-bottom:60px;
+}
+
+.product-card button{
+    opacity: 0;
+    width: 100%;
+}
+.product-card:hover button{
+    transition: all 0.5s;
+    opacity: 80;
+}
+.product-price{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom:30px;
+}
+.shop-button{
+    border:solid 1px var(--primary--collor);
+    background-color: var(--secondary--collor);
+    color: var(--text--collor);
+}
+.shop-button:hover{
+    transition:all 0.5s;
+    border:none;
+    background-color: var(--primary--collor);
+    color:var(--secondary--collor);
+}
+
+/* ------------------------------------------ */
+/* ------------------------------------------ */
+/* ------------------------------------------ */
+
+
+/* ------------------------------------------ */
+/* --------------- DIFERENTIAL -------------- */
+/* ------------------------------------------ */
+
+.diferentials{
+    display: flex;
+    justify-content: flex-start;
+    width: 85vw;
+    height: 90vh;
+    background-image: url(../Dogs/doginho.png);
+    background-size: cover;
+}
+
+.left-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:35px;
+    background-color: #e7b750e3;
+    margin-left:60px;
+    color: var(--primary--collor);
+    font-weight: 400;
+
+}
+.characteristic{
+    width: 60%;
+    padding-left:80px;
+}
+
+.left-bar h2{
+    color:var(--primary--collor);
+    font-size: 30px;
+    font-weight: normal;
+}
+/* ------------------------------------------ */
+/* ------------------------------------------ */
+/* ------------------------------------------ */
+
+
+/* ------------------------------------------ */
+/* ------------- Giving back ---------------- */
+/* ------------------------------------------ */
+
+.giving-back{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:var(--primary--collor);
+    font-size:24px;
+    padding-bottom:40px;
+}
+.giving-back h2{
+    color:var(--primary--collor);
+    font-size:60px;
+    font-weight: normal;
+    padding-bottom:20px;
+}
+.giving-back button{
+    margin-top:60px;
+    background-color: var(--secondary--collor);
+    border: solid 1px var(--primary--collor);
+    color:var(--primary--collor);
+}
+
+.giving-back button:hover{
+    transition:all 0.5s;
+    border:none;
+    background-color: var(--primary--collor);
+    color:var(--secondary--collor);
+
+}
+/* ------------------------------------------ */
+/* ------------------------------------------ */
+/* ------------------------------------------ */
+
+
+/* ------------------------------------------ */
+/* -------------- DEPOYMENTS ---------------- */
+/* ------------------------------------------ */
+
+.depoyments{
+    display: flex;
+    justify-content: center;
+    width:85vw;
+    flex-wrap: wrap;
+    overflow:hidden;
+    color:var(--secondary--collor);
+    padding-bottom:200px;
+    border-bottom:solid 1px var(--primary--collor);
+}
+.depoyment-content{
+    width: 21.25vw;
+}
+.depoyment-content img{
+    height: 100%;
+}
+.depoyment-content h2{
+    font-size:36px;
+}
+
+.depo-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #857c48;
+}
+.depo-1 p{
+    padding-left:60px;
+    font-size:36px;
+    color:var(--secondary--collor);
+}
+.depo-3{
+    color:var(--secondary--collor);
+    background-color: #fec74f;
+    padding:60px;
+    
+}
+
+.depo-4{
+    background-color: #f88d58;
+    padding:60px;
+}
+.depo-2{
+    background-color: #57557d;
+    padding:60px;
+}
+/* ------------------------------------------ */
+/* ------------------------------------------ */
+/* ------------------------------------------ */
+
+
+/* ------------------------------------------ */
+/* ---------------- FOOTER ------------------ */
+/* ------------------------------------------ */
+
+.infos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom:solid 1px var(--primary--collor);
+}
+.info-section{
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    gap:10px;
+    padding-top:40px;
+}
+.info-section a{
+    text-decoration: none;
+    color: var(--primary--collor);
+    font-size:17px;
+    font-weight: bolder;
+}
+.info-social{
+    display: flex;
+    justify-content: space-evenly;
+}
